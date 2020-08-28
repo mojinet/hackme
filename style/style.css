@@ -1,0 +1,840 @@
+/********************************/
+/************BASE****************/
+/********************************/
+body {
+  margin: 0;
+  font-family: "Press Start 2P";
+}
+
+/********************************/
+/************LAYOUT**************/
+/********************************/
+/*commun*/
+.l-header {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.45);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.l-header-level {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.45);
+  background-color: #10304ba0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.l-footer {
+  background-color: #10304b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans";
+  color: #fff;
+  position: relative;
+  padding-top: 50px;
+}
+
+/*home*/
+.l-full-view_home {
+  padding-top: 100px;
+  height: calc(100vh - 100px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.623), rgba(7, 29, 48, 0.373) 100%), url("../img/hacker-3342696_1920.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/*section kezako*/
+.l-section {
+  font-family: "Josefin Sans";
+  background-color: white;
+}
+
+.l-header-section {
+  padding-top: 5vh;
+  min-height: 200px;
+  background-color: #10304b;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.l-content-section {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*level*/
+.l-full-view_level {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(19, 5, 5, 0.589)), url("../img/geometric-1732847_1920.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+/********************************/
+/*************MODULE*************/
+/********************************/
+/*titre*/
+.titre-site {
+  font-size: 250%;
+}
+
+.titre-beta {
+  font-size: 45%;
+  color: #10304b;
+  position: relative;
+  top: -25px;
+}
+
+.titre-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.link-title {
+  color: #fff;
+  text-decoration: none;
+}
+.link-title:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.link-title:active {
+  color: #fff;
+  text-decoration: none;
+}
+.link-title:focus {
+  color: #fff;
+  text-decoration: none;
+}
+.link-title:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*full view content*/
+.big_title {
+  font-size: 250%;
+}
+
+/*bouton HOME*/
+.go_level {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.go_paypal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 60px;
+  left: 350px;
+}
+
+.btn-go_level {
+  background-color: #10304b;
+  border: 0.5px solid #000;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 150%;
+  font-family: "Press Start 2P";
+}
+.btn-go_level:hover {
+  background-color: #0d2a41;
+  border: 0.5px solid #c6cf94;
+  color: #c6cf94;
+}
+
+.btn-go_paypal {
+  background-color: #17507e;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 150%;
+  font-family: "Josefin Sans";
+  border: 1px solid #000;
+  color: white;
+}
+.btn-go_paypal:hover {
+  background-color: #10304b;
+  border: 1px solid #bb9109;
+  color: white;
+}
+
+.gif-in_go_level {
+  position: relative;
+  top: 10px;
+  left: 130px;
+  width: 100px;
+  height: 100px;
+}
+
+.gif-in_go_paypal {
+  position: relative;
+  top: 10px;
+  left: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.btn-next {
+  background-color: #10304b;
+  border: 0.5px solid #000;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 100%;
+  font-family: "Press Start 2P";
+  position: absolute;
+  right: 0px;
+  bottom: 40px;
+  animation: 2s leNomDeLAnimation infinite;
+}
+.btn-next:hover {
+  border: 0.5px solid #c6cf94;
+  color: #c6cf94;
+}
+
+@keyframes leNomDeLAnimation {
+  0% {
+    border: 0.5px solid #000;
+    color: #fff;
+  }
+  50% {
+    border: 0.5px solid #c6cf94;
+    color: #c6cf94;
+  }
+  100% {
+    border: 0.5px solid #000;
+    color: #fff;
+  }
+}
+/*fleche*/
+.fleche {
+  position: relative;
+  bottom: -15vh;
+  width: 75px;
+  height: 75px;
+}
+
+/*section home*/
+.title-header-section {
+  padding-left: 10vw;
+  font-family: "Josefin Sans";
+  margin: 0;
+}
+
+.gif-title-header-section {
+  width: 150px;
+  height: 150px;
+}
+
+.quote-title-header-section {
+  position: relative;
+  padding-left: 30vw;
+}
+.quote-title-header-section span {
+  position: absolute;
+  top: 50px;
+  font-size: 150%;
+}
+
+.content-section {
+  width: 50vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.content-section span {
+  font-size: 150%;
+  display: inline-block;
+  width: 80%;
+  text-align: justify;
+}
+
+.gif-content-section {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  float: left;
+}
+
+/*Level*/
+.indice {
+  font-size: 70%;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  color: brown;
+}
+
+.game-content > form {
+  position: relative;
+}
+
+.section-etoile {
+  margin: 10px;
+}
+
+.score {
+  background-color: #10304b;
+  height: 200px;
+  width: 400px;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.score span {
+  display: block;
+  font-size: 200%;
+}
+.score img {
+  width: 40px;
+  height: 40px;
+}
+
+.niveau {
+  background-color: #10304b;
+  border-radius: 20px 20px 0 0;
+  height: 100px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.niveau span {
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 130%;
+}
+
+.pnj-area {
+  position: relative;
+  justify-self: flex-end;
+  font-family: "Press Start 2P";
+}
+
+.entete-game-area {
+  background-color: #10304b;
+  border-radius: 20px 20px 0 0;
+  padding: 20px 0;
+  position: relative;
+}
+.entete-game-area span {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+.form-access {
+  display: inline;
+}
+
+.btn-access-back {
+  border-radius: 20px;
+  background-color: #10304b;
+  color: #fff;
+  font-family: "Press Start 2P";
+  padding: 5px;
+  border: 1px solid #fdfdfd;
+  position: absolute;
+  left: 10px;
+}
+
+.btn-access-next {
+  border-radius: 20px;
+  background-color: #10304b;
+  color: #fff;
+  font-family: "Press Start 2P";
+  padding: 5px;
+  border: 1px solid #fdfdfd;
+  position: absolute;
+  right: 10px;
+}
+
+.game-content {
+  color: #000;
+  background-color: #fff;
+  height: 60vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn-in_level {
+  font-family: "Press Start 2P";
+  background-color: #10304b;
+  color: #fff;
+  padding: 10px 10px;
+  border: 0.5px solid #000;
+  font-size: 70%;
+  border-radius: 10px;
+}
+.btn-in_level:hover {
+  color: #c6cf94;
+}
+
+.game-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.game-header img {
+  width: 100px;
+  height: 100px;
+}
+
+.level-right {
+  height: calc(100vh );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.dialogue-pnj {
+  position: relative;
+  margin: 0 10px;
+  padding: 15px;
+  width: 370px;
+  line-height: 25px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 30px;
+}
+.dialogue-pnj:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 30px solid #fefeff;
+}
+
+/*footer*/
+.title-footer {
+  font-family: "Josefin Sans";
+}
+
+.content-footer {
+  width: 90%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-footer span {
+  margin-left: 50px;
+  display: inline-block;
+  width: 50%;
+  text-align: justify;
+  line-height: 140%;
+  font-size: 130%;
+}
+
+.pixofmodji {
+  width: 100px;
+  height: 100px;
+}
+
+.copy {
+  align-self: flex-end;
+}
+
+.link-footer, .link-footer:focus, .link-footer:active, .link-footer:visited {
+  text-decoration: none;
+  color: #c01111;
+}
+.link-footer:hover, .link-footer:focus:hover, .link-footer:active:hover, .link-footer:visited:hover {
+  color: #ee0000;
+}
+
+.small-device {
+  display: none;
+}
+
+/********************************/
+/*************STATES*************/
+/********************************/
+/********************************/
+/*************THEME**************/
+/********************************/
+/********************************/
+/**********Media Query***********/
+/********************************/
+/************BASE****************/
+/********Media Querry************/
+@media all and (max-width: 1020px) {
+  .big_title {
+    font-size: 1.5rem !important;
+  }
+}
+@media all and (max-width: 624px) {
+  .big_title {
+    font-size: 0.7rem !important;
+  }
+}
+
+/************LAYOUT**************/
+/********Media Querry************/
+/*section kezako*/
+@media all and (max-width: 830px) {
+  .l-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .l-header-level {
+    justify-content: flex-start;
+  }
+}
+
+@media all and (max-height: 835px) {
+  .l-footer {
+    min-height: 100vh;
+  }
+}
+@media all and (max-width: 580px) {
+  .l-footer {
+    min-height: 100vh;
+  }
+}
+
+@media all and (max-width: 830px) {
+  .l-content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+  }
+}
+
+/*************MODULE*************/
+/********Media Querry************/
+/*bouton HOME*/
+@media all and (max-width: 934px) {
+  .go_paypal {
+    bottom: 0px;
+    left: -50px;
+    display: block;
+  }
+}
+
+@media all and (max-width: 934px) {
+  .gif-in_go_paypal {
+    top: -20px;
+    left: 220px;
+  }
+}
+
+/*section home*/
+@media all and (max-width: 940px) {
+  .title-header-section {
+    font-size: 2rem;
+    padding: 2%;
+    width: 95%;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 830px) {
+  .gif-title-header-section {
+    position: relative;
+    top: -30px;
+  }
+}
+
+@media all and (max-width: 830px) {
+  .quote-title-header-section span {
+    position: relative;
+    top: 0px;
+  }
+}
+@media all and (max-width: 830px) {
+  .quote-title-header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+  }
+}
+
+@media all and (max-width: 830px) {
+  .title-content-section {
+    padding-bottom: 0;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .content-section span {
+    position: relative;
+    bottom: 0;
+    width: 90%;
+  }
+}
+@media all and (max-width: 1280px) {
+  .content-section {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+  }
+}
+@media all and (max-width: 800px) {
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .gif-content-section {
+    display: block;
+  }
+}
+
+@media all and (max-width: 355px) {
+  .titre-site {
+    font-size: 150%;
+  }
+}
+
+/*NIVEAU*/
+@media all and (max-width: 1280px) {
+  .btn-next {
+    bottom: 30px;
+    left: 150px;
+  }
+}
+
+@media all and (max-height: 660px) {
+  .small-device {
+    display: block;
+    margin: 20px;
+    text-align: justify;
+    color: #e01414;
+    font-size: 120%;
+  }
+}
+@media all and (max-width: 580px) {
+  .small-device {
+    display: block;
+    margin: 20px;
+    text-align: justify;
+    color: #e01414;
+    font-size: 120%;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .game-content {
+    width: 95vw;
+    height: 45vh;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media all and (max-height: 883px) {
+  .game-content {
+    height: 40vh;
+  }
+}
+@media all and (max-width: 320px) {
+  .game-content {
+    justify-content: flex-start;
+    padding: 50px 0 0 10px;
+  }
+}
+@media all and (max-height: 716px) {
+  .game-content {
+    justify-content: flex-start;
+    padding: 50px 0 0 10px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .game-header {
+    display: none;
+  }
+}
+@media all and (max-height: 716px) {
+  .game-header {
+    display: none;
+  }
+}
+
+form {
+  margin: 2%;
+}
+
+@media all and (max-width: 1000px) {
+  .niveau {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+@media all and (max-width: 680px) {
+  .niveau {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+  }
+}
+@media all and (max-width: 760px) {
+  .niveau {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+  }
+}
+@media all and (max-width: 600px) {
+  .niveau {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    font-size: 80%;
+  }
+}
+@media all and (max-width: 513px) {
+  .niveau {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .score {
+    height: 150px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+@media all and (max-width: 740px) {
+  .score {
+    height: 100px;
+    width: 30px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .score span {
+    display: none;
+  }
+  .score img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .pnj-area {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .dialogue-pnj {
+    width: 80vw;
+    background-color: #e4e3e3;
+  }
+  .dialogue-pnj:after {
+    border-top: 30px solid #e4e3e3;
+  }
+}
+@media all and (max-width: 600px) {
+  .dialogue-pnj {
+    font-size: 70%;
+  }
+}
+
+/*footer*/
+@media all and (max-width: 830px) {
+  .title-footer {
+    font-size: 1.3rem;
+  }
+}
+
+@media all and (max-width: 934px) {
+  .content-footer span {
+    width: 70%;
+    margin: 10px;
+  }
+}
+@media all and (max-width: 934px) {
+  .content-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 934px) {
+  .copy {
+    display: block;
+    text-align: end;
+  }
+}
+
+/********************************/
+/*************SHAME**************/
+/********************************/
+
+/*# sourceMappingURL=style.css.map */

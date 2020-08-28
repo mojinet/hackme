@@ -1,0 +1,283 @@
+/************BASE****************/
+/********Media Querry************/
+
+.big_title{
+    @media all and (max-width: 1020px){
+        font-size: 1.5rem !important;
+    }
+    @media all and (max-width: 624px){
+        font-size: 0.7rem !important;
+    }    
+}
+
+/************LAYOUT**************/
+/********Media Querry************/
+/*section kezako*/
+.l-section{ 
+    @media all and (max-width: 830px){
+        display: flex;   
+        flex-direction: column;
+    }
+}
+.l-header-level{
+    @media all and (max-width: 1280px){
+        justify-content: flex-start;
+    }
+}
+
+.l-footer{
+    @media all and (max-height: 835px){ 
+        min-height: 100vh;
+    }  
+    @media all and (max-width: 580px){ 
+        min-height: 100vh;
+    }    
+}
+.l-content-section{  
+    @media all and (max-width: 830px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+    }
+}
+
+/*************MODULE*************/
+/********Media Querry************/
+/*bouton HOME*/
+.go_paypal{
+    @media all and (max-width: 934px){
+        bottom: 0px;
+        left: -50px;    
+        display: block;   
+    }
+}
+.gif-in_go_paypal{
+    @media all and (max-width: 934px){
+        top:-20px;
+        left:220px;
+    }
+ }
+ /*section home*/
+ .title-header-section{
+    @media all and (max-width: 940px){
+        font-size: 2rem;
+        padding: 2%;
+        width: 95%;
+        text-align: center;
+    }
+}
+.gif-title-header-section{
+    @media all and (max-width: 830px){
+        position: relative;
+        top: -30px;  
+    }
+}
+.quote-title-header-section{ 
+    span{
+        @media all and (max-width: 830px){
+            position: relative;
+            top:0px;  
+        }
+    }
+    @media all and (max-width: 830px){
+        display: flex;   
+        flex-direction: column;
+        align-items: center;
+        padding:2%;
+    }
+}
+.title-content-section{  
+    @media all and (max-width: 1337px){
+
+    }
+    @media all and (max-width: 830px){
+        padding-bottom: 0;
+    }
+}
+.content-section{
+    span{
+        @media all and (max-width: 1280px){
+            position: relative;
+            bottom:0;
+            width: 90%;
+        }
+    }
+    @media all and (max-width: 1280px){
+        display: flex;   
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        width: 80%;
+    }
+    @media all and (max-width: 800px){
+        display: flex;   
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        width: 80%;
+    }
+}
+.gif-content-section{
+    @media all and (max-width: 1280px){
+        display: block;
+    }
+}
+.titre-site{
+    @media all and (max-width: 355px){ 
+        font-size: 150%;
+    }      
+}
+/*NIVEAU*/ 
+.btn-next{
+    @media all and (max-width: 1280px){ 
+        bottom:30px;
+        left:150px;
+    }     
+}
+.small-device{
+    @media all and (max-height: 660px){ 
+        display : block;
+        margin: 20px;    
+        text-align: justify;
+        color : rgb(224, 20, 20);
+        font-size: 120%;
+    }  
+    @media all and (max-width: 580px){ 
+        display : block;
+        margin: 20px; 
+        text-align: justify;  
+        color : rgb(224, 20, 20);
+        font-size: 120%;     
+    }
+}
+.game-content{
+    @media all and (max-width: 1000px){
+        width: 95vw;   
+        height: 45vh;  
+        padding: 0;
+        margin: 0;    
+    }    
+    @media all and (max-height: 883px){  
+        height: 40vh;      
+    }     
+    @media all and (max-width: 320px){
+        justify-content: flex-start;
+        padding: 50px 0 0 10px;
+    }   
+    @media all and (max-height: 716px){
+        justify-content: flex-start;
+        padding: 50px 0 0 10px;
+    }  
+}
+.game-header{
+    @media all and (max-width: 320px){
+        display: none;
+    }    
+    @media all and (max-height: 716px){
+        display: none;
+    }  
+}
+form{
+    margin: 2%;
+}
+.niveau{
+    @media all and (max-width: 1000px){
+        position: absolute;
+        bottom:0;
+        right: 0; 
+    }
+    @media all and (max-width: 680px){
+        position: absolute;
+        bottom:0;
+        right: 0; 
+        width: 300px;
+    }    
+    @media all and (max-width: 760px){
+        position: absolute;
+        bottom:0;
+        right: 0; 
+        width: 250px;
+    }   
+    @media all and (max-width: 600px){
+        position: absolute;
+        bottom:0;
+        right: 0; 
+        width: 150px;
+        font-size: 80%;
+    }  
+    @media all and (max-width: 513px){
+        display: none;
+    }  
+}
+.score{
+    @media all and (max-width: 1000px){
+        height: 150px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    @media all and (max-width: 740px){
+        height: 100px;
+        width: 30px;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        span{
+            display: none;
+        }
+        img{
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+}
+.pnj-area{
+    @media all and (max-width: 1000px){
+        position: absolute;
+        bottom : 0; 
+        left: 10px;    
+    }   
+}
+.dialogue-pnj{
+    @media all and (max-width: 1000px){
+        width: 80vw;
+        background-color: rgb(228, 227, 227);
+        &:after{
+            border-top: 30px solid rgb(228, 227, 227);  
+        }
+    }  
+    @media all and (max-width: 600px){
+        font-size: 70% ;
+    }    
+}
+/*footer*/ 
+.title-footer{
+    @media all and (max-width: 830px){
+        font-size: 1.3rem;
+    }
+}
+.content-footer{
+    span{
+        @media all and (max-width: 934px){
+            width: 70%;  
+            margin: 10px;
+        }
+    }
+    @media all and (max-width: 934px){
+        width: 100%;  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.copy{
+    @media all and (max-width: 934px){
+        display: block;
+        text-align: end;
+    }
+}

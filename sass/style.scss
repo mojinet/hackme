@@ -1,0 +1,489 @@
+//VARIABLE
+$color-main_header_bg : rgba(0, 0, 0, 0.45);
+$bg-footer-color : #023735;
+$bg-img_full_view_home : '../img/hacker-3342696_1920.jpg';
+$bg-img_full_view_level : '../img/geometric-1732847_1920.jpg';
+//#13334E
+$commune : rgb(16, 48, 75);
+$color-red : $commune;
+$police-pixel : 'Press Start 2P';
+$police-titre : 'Josefin Sans';
+$police-text : 'Josefin Sans';
+$color-footer : $commune;
+/********************************/
+/************BASE****************/
+/********************************/
+body{
+    margin: 0;
+    font-family: $police-pixel;
+}
+
+/********************************/
+/************LAYOUT**************/
+/********************************/
+
+/*commun*/
+.l-header{
+    height: 100px;
+    background-color: $color-main_header_bg;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.l-header-level{
+    height: 100px;
+    background-color: $color-main_header_bg;
+    background-color: $color-red + a0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.l-footer{
+    background-color: $color-footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $police-text;
+    color: #fff;
+    position: relative;
+    padding-top: 50px;
+}
+/*home*/
+.l-full-view_home{
+    padding-top: 100px;
+    height: calc(100vh - 100px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.623) ,rgba(7, 29, 48, 0.373) 100%), 
+    url($bg-img_full_view_home);
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+/*section kezako*/
+.l-section{
+    font-family: $police-text; 
+    background-color: rgb(255, 255, 255);
+}
+.l-header-section{
+    padding-top: 5vh;
+    min-height: 200px;
+    background-color: $color-footer;
+    background-position: center;
+    background-size: cover;  
+    color: rgb(255, 255, 255);
+}
+.l-content-section{
+    padding : 50px 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+/*level*/
+.l-full-view_level{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.534),rgba(19, 5, 5, 0.589)), 
+    url($bg-img_full_view_level);
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items : center;
+    color: #fff;
+}
+/********************************/
+/*************MODULE*************/
+/********************************/
+
+/*titre*/
+.titre-site{
+    font-size: 250%;
+}
+.titre-beta{
+    font-size: 45%;
+    color : $color-red;
+    position: relative;
+    top : -25px;
+}
+.titre-logo{
+    width: 50px;
+    height: 50px;
+}
+.link-title{
+    color : #fff;
+    text-decoration: none;
+    &:hover{
+        color : #fff;
+        text-decoration: none;
+    }
+    &:active{
+        color : #fff;
+        text-decoration: none;
+    }
+    &:focus{
+        color : #fff;
+        text-decoration: none;
+    }
+    &:visited{
+        color : #fff;
+        text-decoration: none;
+    }
+}
+/*full view content*/
+.big_title{
+    font-size: 250%;
+}
+/*bouton HOME*/
+.go_level{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.go_paypal{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 60px;
+    left: 350px;
+}
+.btn-go_level{
+    background-color: $color-red;
+    border: 0.5px solid #000;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 150%;
+    font-family: $police-pixel;
+    &:hover{
+        background-color: rgb(13, 42, 65);
+        border: 0.5px solid rgb(198, 207, 148);  
+        color: rgb(198, 207, 148);     
+    }  
+}
+.btn-go_paypal{
+    background-color: rgb(23, 80, 126);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 150%;
+    font-family: $police-titre; 
+    border: 1px solid #000;
+    color: white; 
+    &:hover{
+        background-color: $commune;  
+        border: 1px solid rgb(187, 145, 9);
+        color: white;       
+    }   
+}
+.gif-in_go_level{
+   position: relative;
+   top:10px;
+   left: 130px;
+   width: 100px;
+   height: 100px; 
+}
+.gif-in_go_paypal{
+    position: relative;
+    top:10px;
+    left: 100px;
+    width: 100px;
+    height: 100px; 
+ }
+
+ .btn-next{
+    background-color: $color-red;
+    border: 0.5px solid #000;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 100%;
+    font-family: $police-pixel;
+    position: absolute;
+    right: 0px;
+    bottom: 40px;
+    animation: 2s leNomDeLAnimation infinite;
+    &:hover{
+        border: 0.5px solid rgb(198, 207, 148);  
+        color: rgb(198, 207, 148);    
+    }      
+ }
+
+ @keyframes leNomDeLAnimation {
+    0% {
+        border: 0.5px solid #000;
+        color: #fff;
+    }
+    50% {
+        border: 0.5px solid rgb(198, 207, 148);  
+        color: rgb(198, 207, 148);
+    }
+    100% {
+        border: 0.5px solid #000;
+        color: #fff;
+    }
+}
+/*fleche*/
+.fleche{
+    position: relative;
+    bottom: -15vh;
+    width: 75px;
+    height: 75px;
+}
+/*section home*/
+.title-header-section{
+    padding-left: 10vw;
+    font-family: $police-titre;
+    margin: 0;
+}
+.gif-title-header-section{
+    width: 150px;
+    height: 150px;
+}
+.quote-title-header-section{
+    position: relative;
+    padding-left: 30vw;  
+    span{
+        position: absolute;
+        top: 50px;
+        font-size: 150%;
+    }
+}
+.title-content-section{
+       
+}
+.content-section{
+    width: 50vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    span{
+        font-size: 150%;
+        display: inline-block;   
+        width: 80%;
+        text-align: justify;
+    }
+}
+.gif-content-section{
+    width: 150px;
+    height: 150px;
+    margin-top:10px;
+    float: left;
+}
+/*Level*/ 
+.indice{
+    font-size : 70%;
+    position: absolute;
+    bottom:-30px;
+    left: 0;
+    color : brown;
+}
+.game-content > form{
+    position: relative;
+}
+.section-etoile{
+    margin : 10px;
+}
+.score{
+    background-color: $color-red;
+    height: 200px;
+    width: 400px;
+    border-radius: 0 0 20px 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    span{
+        display: block;       
+        font-size: 200%;
+    }
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
+.niveau{
+    background-color: $color-red;
+    border-radius: 20px 20px 0 0;
+    height: 100px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    span{
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-size: 130%;
+    }
+}
+.pnj-area{
+    position: relative;
+    justify-self: flex-end;
+    font-family: $police-pixel;
+}
+.entete-game-area{
+    background-color: $color-red;
+    border-radius: 20px 20px 0 0;
+    padding: 20px 0;
+    position: relative;
+    span{
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+}
+.form-access{
+    display: inline;
+}
+.btn-access-back{
+    border-radius: 20px;
+    background-color: $commune;
+    color: #fff;
+    font-family: $police-pixel;
+    padding: 5px;
+    border: 1px solid rgb(253, 253, 253);
+    position: absolute;
+    left: 10px;
+}
+.btn-access-next{
+    border-radius: 20px;
+    background-color: $commune;
+    color: #fff;
+    font-family: $police-pixel;
+    padding: 5px;
+    border: 1px solid rgb(253, 253, 253);
+    position: absolute;
+    right: 10px;
+}
+.game-content{
+    color : #000;
+    background-color: #fff;
+    height: 60vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn-in_level{
+    font-family: $police-pixel;
+    background-color: $color-red;
+    color: #fff;
+    padding: 10px 10px;
+    border: 0.5px solid #000; 
+    font-size: 70%;
+    border-radius: 10px;
+    &:hover{ 
+        color: rgb(198, 207, 148);     
+    }  
+}  
+.game-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    img{
+        width: 100px;
+        height: 100px;
+    }
+}
+.level-right{
+    height: calc(100vh );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+}
+.dialogue-pnj{
+    position: relative;
+    margin : 0 10px;
+    padding: 15px;
+    width: 370px;
+    line-height: 25px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    &:after{
+        content: '';
+        position: absolute;
+        bottom: -25px;
+        left : 20px;
+        width: 0;
+        height: 0;
+        border-left: 18px solid transparent;
+        border-right: 18px solid transparent;
+        border-top: 30px solid rgb(254, 254, 255);
+    }
+}
+/*footer*/ 
+.title-footer{
+    font-family: $police-titre;
+}
+.content-footer{
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span{
+        margin-left: 50px;
+        display: inline-block;
+        width: 50%;
+        text-align: justify;
+        line-height: 140%;
+        font-size: 130%;
+    }
+}
+.pixofmodji{
+    width: 100px;
+    height: 100px;
+}
+.copy{
+    align-self: flex-end;
+}
+.link-footer, .link-footer:focus, .link-footer:active, .link-footer:visited{
+    text-decoration: none;
+    color: rgb(192, 17, 17);
+    &:hover{
+        color: rgb(238, 0, 0);
+    }
+}
+.small-device{
+    display : none;     
+}  
+/********************************/
+/*************STATES*************/
+/********************************/
+
+/********************************/
+/*************THEME**************/
+/********************************/
+
+/********************************/
+/**********Media Query***********/
+/********************************/
+@import 'libs/mediaquery.scss';
+
+/********************************/
+/*************SHAME**************/
+/********************************/
